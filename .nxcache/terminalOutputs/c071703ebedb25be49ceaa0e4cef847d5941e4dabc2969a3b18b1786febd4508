@@ -1,0 +1,945 @@
+
+[31m✘[39m node v22.16.0 is [31mnot yet supported[39m in the Community edition of [33mConsole Ninja[39m.
+We are working hard on it for you [36mhttps://tinyurl.com/3h9mtwra[39m.
+
+Estimated release dates:
+  - Community users: [36maround 20th July, 2025 [1m(subject to team availability)[22m[39m
+[33m  - PRO users[39m:       [1m[32mpriority access is available now[39m[22m
+
+<i> [1m[32m[webpack-dev-server] [HPM] Proxy created: /api  -> http://localhost:3333[39m[22m
+<i> [1m[32m[webpack-dev-server] Project is running at:[39m[22m
+<i> [1m[32m[webpack-dev-server] Loopback: [36mhttp://localhost:4200/[39m, [36mhttp://[::1]:4200/[39m[39m[22m
+<i> [1m[32m[webpack-dev-server] 404s will fallback to '[36m/index.html[39m'[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mWeb Development Server is listening at http://localhost:4200/[22m
+
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 1.69 MiB (2.12 MiB) = [1m[32mruntime.js[39m[22m 47.3 KiB [1m[32mvendor.js[39m[22m 1.63 MiB [1m[32mmain.css[39m[22m 103 bytes [1m[32mmain.js[39m[22m 10.8 KiB 4 auxiliary assets
+Entrypoint [1mstyles[39m[22m 189 KiB (216 KiB) = [1m[32mruntime.js[39m[22m 47.3 KiB [1m[32mstyles.css[39m[22m 119 bytes [1m[32mstyles.js[39m[22m 142 KiB 3 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m (main) 9.19 KiB (javascript) 65 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 135 KiB (javascript) 80 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.62 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (26376d77eccb58ac)
+(node:59159) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 1.69 MiB (2.12 MiB) = 6 assets 6 auxiliary assets
+Entrypoint [1mstyles[39m[22m 196 KiB (227 KiB) = [1m[32mruntime.js[39m[22m 47.3 KiB [1m[32m1.26376d77eccb58ac.hot-update.js[39m[22m 351 bytes [1m[32mstyles.css[39m[22m 6.73 KiB [1m[32mstyles.js[39m[22m 142 KiB [1m[32m2.26376d77eccb58ac.hot-update.js[39m[22m 521 bytes 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.26376d77eccb58ac.hot-update.js[39m[22m (main) 9.19 KiB (javascript) 65 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.26376d77eccb58ac.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.26376d77eccb58ac.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.62 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (c3de39f7ac023d88)
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 1.69 MiB (2.12 MiB) = 6 assets 6 auxiliary assets
+Entrypoint [1mstyles[39m[22m 196 KiB (227 KiB) = [1m[32mruntime.js[39m[22m 47.3 KiB [1m[32m1.c3de39f7ac023d88.hot-update.js[39m[22m 351 bytes [1m[32mstyles.css[39m[22m 6.73 KiB [1m[32mstyles.js[39m[22m 142 KiB [1m[32m2.c3de39f7ac023d88.hot-update.js[39m[22m 521 bytes 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.c3de39f7ac023d88.hot-update.js[39m[22m (main) 9.19 KiB (javascript) 65 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.c3de39f7ac023d88.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.c3de39f7ac023d88.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.62 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (cfdf39f5856ca330)
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 1.69 MiB (2.12 MiB) = 6 assets 6 auxiliary assets
+Entrypoint [1mstyles[39m[22m 196 KiB (227 KiB) = [1m[32mruntime.js[39m[22m 47.3 KiB [1m[32m1.cfdf39f5856ca330.hot-update.js[39m[22m 351 bytes [1m[32mstyles.css[39m[22m 6.73 KiB [1m[32mstyles.js[39m[22m 142 KiB [1m[32m2.cfdf39f5856ca330.hot-update.js[39m[22m 521 bytes 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.cfdf39f5856ca330.hot-update.js[39m[22m (main) 9.19 KiB (javascript) 65 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.cfdf39f5856ca330.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.cfdf39f5856ca330.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.62 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (0a58eac7b3ac6c7d)
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 1.69 MiB (2.12 MiB) = 6 assets 6 auxiliary assets
+Entrypoint [1mstyles[39m[22m 196 KiB (227 KiB) = [1m[32mruntime.js[39m[22m 47.3 KiB [1m[32m1.0a58eac7b3ac6c7d.hot-update.js[39m[22m 351 bytes [1m[32mstyles.css[39m[22m 6.73 KiB [1m[32mstyles.js[39m[22m 142 KiB [1m[32m2.0a58eac7b3ac6c7d.hot-update.js[39m[22m 521 bytes 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.0a58eac7b3ac6c7d.hot-update.js[39m[22m (main) 9.19 KiB (javascript) 65 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.0a58eac7b3ac6c7d.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.0a58eac7b3ac6c7d.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.62 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (3288c722d4b83e76)
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 1.69 MiB (2.12 MiB) = 6 assets 6 auxiliary assets
+Entrypoint [1mstyles[39m[22m 196 KiB (227 KiB) = [1m[32mruntime.js[39m[22m 47.3 KiB [1m[32m1.3288c722d4b83e76.hot-update.js[39m[22m 351 bytes [1m[32mstyles.css[39m[22m 6.73 KiB [1m[32mstyles.js[39m[22m 142 KiB [1m[32m2.3288c722d4b83e76.hot-update.js[39m[22m 521 bytes 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.3288c722d4b83e76.hot-update.js[39m[22m (main) 9.19 KiB (javascript) 65 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.3288c722d4b83e76.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.3288c722d4b83e76.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.62 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (abad0de4bc471fe3)
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 1.69 MiB (2.12 MiB) = 6 assets 6 auxiliary assets
+Entrypoint [1mstyles[39m[22m 196 KiB (227 KiB) = [1m[32mruntime.js[39m[22m 47.3 KiB [1m[32m1.abad0de4bc471fe3.hot-update.js[39m[22m 351 bytes [1m[32mstyles.css[39m[22m 6.73 KiB [1m[32mstyles.js[39m[22m 142 KiB [1m[32m2.abad0de4bc471fe3.hot-update.js[39m[22m 521 bytes 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.abad0de4bc471fe3.hot-update.js[39m[22m (main) 9.19 KiB (javascript) 65 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.abad0de4bc471fe3.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.abad0de4bc471fe3.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.62 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (6c7c3c609d8e8f22)
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /vendor.js[39m[22m
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /styles.js[39m[22m
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /main.js[39m[22m
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /main.css.map[39m[22m
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /styles.css.map[39m[22m
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /runtime.js.map[39m[22m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 1.69 MiB (2.12 MiB) = 6 assets 6 auxiliary assets
+Entrypoint [1mstyles[39m[22m 196 KiB (227 KiB) = [1m[32mruntime.js[39m[22m 47.3 KiB [1m[32m1.6c7c3c609d8e8f22.hot-update.js[39m[22m 351 bytes [1m[32mstyles.css[39m[22m 6.73 KiB [1m[32mstyles.js[39m[22m 142 KiB [1m[32m2.6c7c3c609d8e8f22.hot-update.js[39m[22m 521 bytes 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.6c7c3c609d8e8f22.hot-update.js[39m[22m (main) 9.19 KiB (javascript) 65 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.6c7c3c609d8e8f22.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.6c7c3c609d8e8f22.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.62 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (8740439e73acc37a)
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 1.69 MiB (2.12 MiB) = 6 assets 6 auxiliary assets
+Entrypoint [1mstyles[39m[22m 196 KiB (227 KiB) = [1m[32mruntime.js[39m[22m 47.3 KiB [1m[32m1.8740439e73acc37a.hot-update.js[39m[22m 351 bytes [1m[32mstyles.css[39m[22m 6.73 KiB [1m[32mstyles.js[39m[22m 142 KiB [1m[32m2.8740439e73acc37a.hot-update.js[39m[22m 521 bytes 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.8740439e73acc37a.hot-update.js[39m[22m (main) 9.19 KiB (javascript) 65 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.8740439e73acc37a.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.8740439e73acc37a.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.62 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (3722cb4e339a557d)
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 1.69 MiB (2.12 MiB) = 6 assets 6 auxiliary assets
+Entrypoint [1mstyles[39m[22m 196 KiB (227 KiB) = [1m[32mruntime.js[39m[22m 47.3 KiB [1m[32m1.3722cb4e339a557d.hot-update.js[39m[22m 351 bytes [1m[32mstyles.css[39m[22m 6.73 KiB [1m[32mstyles.js[39m[22m 142 KiB [1m[32m2.3722cb4e339a557d.hot-update.js[39m[22m 521 bytes 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.3722cb4e339a557d.hot-update.js[39m[22m (main) 9.19 KiB (javascript) 65 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.3722cb4e339a557d.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.3722cb4e339a557d.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.62 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (1948bdbce0384175)
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 1.69 MiB (2.12 MiB) = 6 assets 6 auxiliary assets
+Entrypoint [1mstyles[39m[22m 196 KiB (227 KiB) = [1m[32mruntime.js[39m[22m 47.3 KiB [1m[32m1.1948bdbce0384175.hot-update.js[39m[22m 351 bytes [1m[32mstyles.css[39m[22m 6.73 KiB [1m[32mstyles.js[39m[22m 142 KiB [1m[32m2.1948bdbce0384175.hot-update.js[39m[22m 521 bytes 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.1948bdbce0384175.hot-update.js[39m[22m (main) 9.19 KiB (javascript) 65 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.1948bdbce0384175.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.1948bdbce0384175.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.62 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (d52421299a68402a)
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 1.69 MiB (2.12 MiB) = 6 assets 6 auxiliary assets
+Entrypoint [1mstyles[39m[22m 196 KiB (227 KiB) = [1m[32mruntime.js[39m[22m 47.3 KiB [1m[32m1.d52421299a68402a.hot-update.js[39m[22m 351 bytes [1m[32mstyles.css[39m[22m 6.73 KiB [1m[32mstyles.js[39m[22m 142 KiB [1m[32m2.d52421299a68402a.hot-update.js[39m[22m 521 bytes 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.d52421299a68402a.hot-update.js[39m[22m (main) 9.19 KiB (javascript) 65 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.d52421299a68402a.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.d52421299a68402a.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.62 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (5d4d003bb4fbfa64)
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 1.69 MiB (2.12 MiB) = 6 assets 6 auxiliary assets
+Entrypoint [1mstyles[39m[22m 196 KiB (227 KiB) = [1m[32mruntime.js[39m[22m 47.3 KiB [1m[32m1.5d4d003bb4fbfa64.hot-update.js[39m[22m 351 bytes [1m[32mstyles.css[39m[22m 6.73 KiB [1m[32mstyles.js[39m[22m 142 KiB [1m[32m2.5d4d003bb4fbfa64.hot-update.js[39m[22m 521 bytes 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.5d4d003bb4fbfa64.hot-update.js[39m[22m (main) 9.19 KiB (javascript) 65 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.5d4d003bb4fbfa64.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.5d4d003bb4fbfa64.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.62 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (d64405a909c62484)
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 1.69 MiB (2.12 MiB) = 6 assets 6 auxiliary assets
+Entrypoint [1mstyles[39m[22m 196 KiB (227 KiB) = [1m[32mruntime.js[39m[22m 47.3 KiB [1m[32m1.d64405a909c62484.hot-update.js[39m[22m 351 bytes [1m[32mstyles.css[39m[22m 6.73 KiB [1m[32mstyles.js[39m[22m 142 KiB [1m[32m2.d64405a909c62484.hot-update.js[39m[22m 521 bytes 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.d64405a909c62484.hot-update.js[39m[22m (main) 9.19 KiB (javascript) 65 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.d64405a909c62484.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.d64405a909c62484.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.62 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (ca8919fda6577037)
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 1.69 MiB (2.12 MiB) = 6 assets 6 auxiliary assets
+Entrypoint [1mstyles[39m[22m 196 KiB (227 KiB) = [1m[32mruntime.js[39m[22m 47.3 KiB [1m[32m1.ca8919fda6577037.hot-update.js[39m[22m 351 bytes [1m[32mstyles.css[39m[22m 6.73 KiB [1m[32mstyles.js[39m[22m 142 KiB [1m[32m2.ca8919fda6577037.hot-update.js[39m[22m 521 bytes 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.ca8919fda6577037.hot-update.js[39m[22m (main) 9.19 KiB (javascript) 65 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.ca8919fda6577037.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.ca8919fda6577037.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.62 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (360ca081bd817d85)
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 1.69 MiB (2.12 MiB) = 6 assets 6 auxiliary assets
+Entrypoint [1mstyles[39m[22m 196 KiB (227 KiB) = [1m[32mruntime.js[39m[22m 47.3 KiB [1m[32m1.360ca081bd817d85.hot-update.js[39m[22m 351 bytes [1m[32mstyles.css[39m[22m 6.73 KiB [1m[32mstyles.js[39m[22m 142 KiB [1m[32m2.360ca081bd817d85.hot-update.js[39m[22m 521 bytes 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.360ca081bd817d85.hot-update.js[39m[22m (main) 9.19 KiB (javascript) 65 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.360ca081bd817d85.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.360ca081bd817d85.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.62 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (def8b7345c8eb68f)
+Entrypoint [1mmain[39m[22m = 7 assets 7 auxiliary assets
+Entrypoint [1mstyles[39m[22m = [1m[32mruntime.js[39m[22m [1m[32m1.def8b7345c8eb68f.hot-update.js[39m[22m [1m[32mstyles.css[39m[22m [1m[32mstyles.js[39m[22m [1m[32m2.def8b7345c8eb68f.hot-update.js[39m[22m 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.def8b7345c8eb68f.hot-update.js[39m[22m (main) 52.2 KiB (javascript) 5.1 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.def8b7345c8eb68f.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.def8b7345c8eb68f.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m, [1m[32m3.def8b7345c8eb68f.hot-update.js[39m[22m (vendor) (id hint: vendor) 2.43 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/AddTicketModal.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/LoadingSpinner.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/TicketCard.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/tickets/tickets.tsx[39m[22m [1m[32m165:0-43[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve './tickets.module.scss' in '/Users/tienloc/Developer/Payback/coding-assignment-react/client/src/app/tickets'[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/app.tsx:[32m[1m33:43[22m[39m[1m[39m[22m
+[90mTS2322: [39mType '{ tickets: Ticket[]; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'tickets' does not exist on type 'IntrinsicAttributes'.
+  [0m [90m 31 |[39m       [33m<[39m[33mh1[39m[33m>[39m[33mTicketing[39m [33mApp[39m[33m<[39m[33m/[39m[33mh1[39m[33m>[39m
+   [90m 32 |[39m       [33m<[39m[33mRoutes[39m[33m>[39m
+  [31m[1m>[22m[39m[90m 33 |[39m         [33m<[39m[33mRoute[39m path[33m=[39m[32m"/"[39m element[33m=[39m{[33m<[39m[33mTickets[39m tickets[33m=[39m{tickets} [35m/>} /[39m[33m>[39m
+   [90m    |[39m                                           [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 34 |[39m         {[90m/* Hint: Try `npx nx g component TicketDetails --project=client --no-export` to generate this component  */[39m}
+   [90m 35 |[39m         [33m<[39m[33mRoute[39m path[33m=[39m[32m"/:id"[39m element[33m=[39m{[33m<[39m[33mh2[39m[33m>[39m[33mDetails[39m [33mNot[39m [33mImplemented[39m[33m<[39m[35m/h2>} /[39m[33m>[39m
+   [90m 36 |[39m       [33m<[39m[33m/[39m[33mRoutes[39m[33m>[39m[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (31bc82c5a6a8ad5a)
+Entrypoint [1mmain[39m[22m = 7 assets 7 auxiliary assets
+Entrypoint [1mstyles[39m[22m = [1m[32mruntime.js[39m[22m [1m[32m1.def8b7345c8eb68f.hot-update.js[39m[22m [1m[32mstyles.css[39m[22m [1m[32mstyles.js[39m[22m [1m[32m2.def8b7345c8eb68f.hot-update.js[39m[22m 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.def8b7345c8eb68f.hot-update.js[39m[22m (main) 52.2 KiB (javascript) 5.1 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.def8b7345c8eb68f.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.def8b7345c8eb68f.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m, [1m[32m3.def8b7345c8eb68f.hot-update.js[39m[22m (vendor) (id hint: vendor) 2.43 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/AddTicketModal.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/LoadingSpinner.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/TicketCard.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/tickets/tickets.tsx[39m[22m [1m[32m165:0-43[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve './tickets.module.scss' in '/Users/tienloc/Developer/Payback/coding-assignment-react/client/src/app/tickets'[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/app.tsx:[32m[1m33:43[22m[39m[1m[39m[22m
+[90mTS2322: [39mType '{ tickets: Ticket[]; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'tickets' does not exist on type 'IntrinsicAttributes'.
+  [0m [90m 31 |[39m       [33m<[39m[33mh1[39m[33m>[39m[33mTicketing[39m [33mApp[39m[33m<[39m[33m/[39m[33mh1[39m[33m>[39m
+   [90m 32 |[39m       [33m<[39m[33mRoutes[39m[33m>[39m
+  [31m[1m>[22m[39m[90m 33 |[39m         [33m<[39m[33mRoute[39m path[33m=[39m[32m"/"[39m element[33m=[39m{[33m<[39m[33mTickets[39m tickets[33m=[39m{tickets} [35m/>} /[39m[33m>[39m
+   [90m    |[39m                                           [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 34 |[39m         {[90m/* Hint: Try `npx nx g component TicketDetails --project=client --no-export` to generate this component  */[39m}
+   [90m 35 |[39m         [33m<[39m[33mRoute[39m path[33m=[39m[32m"/:id"[39m element[33m=[39m{[33m<[39m[33mh2[39m[33m>[39m[33mDetails[39m [33mNot[39m [33mImplemented[39m[33m<[39m[35m/h2>} /[39m[33m>[39m
+   [90m 36 |[39m       [33m<[39m[33m/[39m[33mRoutes[39m[33m>[39m[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (b32565a290ac4b21)
+Entrypoint [1mmain[39m[22m = 7 assets 7 auxiliary assets
+Entrypoint [1mstyles[39m[22m = [1m[32mruntime.js[39m[22m [1m[32m1.def8b7345c8eb68f.hot-update.js[39m[22m [1m[32mstyles.css[39m[22m [1m[32mstyles.js[39m[22m [1m[32m2.def8b7345c8eb68f.hot-update.js[39m[22m 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.def8b7345c8eb68f.hot-update.js[39m[22m (main) 52.2 KiB (javascript) 5.1 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.def8b7345c8eb68f.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.def8b7345c8eb68f.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m, [1m[32m3.def8b7345c8eb68f.hot-update.js[39m[22m (vendor) (id hint: vendor) 2.43 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/TicketCard.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/LoadingSpinner.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/AddTicketModal.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/tickets/tickets.tsx[39m[22m [1m[32m165:0-43[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve './tickets.module.scss' in '/Users/tienloc/Developer/Payback/coding-assignment-react/client/src/app/tickets'[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/app.tsx:[32m[1m33:43[22m[39m[1m[39m[22m
+[90mTS2322: [39mType '{ tickets: Ticket[]; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'tickets' does not exist on type 'IntrinsicAttributes'.
+  [0m [90m 31 |[39m       [33m<[39m[33mh1[39m[33m>[39m[33mTicketing[39m [33mApp[39m[33m<[39m[33m/[39m[33mh1[39m[33m>[39m
+   [90m 32 |[39m       [33m<[39m[33mRoutes[39m[33m>[39m
+  [31m[1m>[22m[39m[90m 33 |[39m         [33m<[39m[33mRoute[39m path[33m=[39m[32m"/"[39m element[33m=[39m{[33m<[39m[33mTickets[39m tickets[33m=[39m{tickets} [35m/>} /[39m[33m>[39m
+   [90m    |[39m                                           [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 34 |[39m         {[90m/* Hint: Try `npx nx g component TicketDetails --project=client --no-export` to generate this component  */[39m}
+   [90m 35 |[39m         [33m<[39m[33mRoute[39m path[33m=[39m[32m"/:id"[39m element[33m=[39m{[33m<[39m[33mh2[39m[33m>[39m[33mDetails[39m [33mNot[39m [33mImplemented[39m[33m<[39m[35m/h2>} /[39m[33m>[39m
+   [90m 36 |[39m       [33m<[39m[33m/[39m[33mRoutes[39m[33m>[39m[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (eafc8bfd5ad6cf64)
+Entrypoint [1mmain[39m[22m = 7 assets 7 auxiliary assets
+Entrypoint [1mstyles[39m[22m = [1m[32mruntime.js[39m[22m [1m[32m1.def8b7345c8eb68f.hot-update.js[39m[22m [1m[32mstyles.css[39m[22m [1m[32mstyles.js[39m[22m [1m[32m2.def8b7345c8eb68f.hot-update.js[39m[22m 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.def8b7345c8eb68f.hot-update.js[39m[22m (main) 52.7 KiB (javascript) 5.1 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.def8b7345c8eb68f.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.def8b7345c8eb68f.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m, [1m[32m3.def8b7345c8eb68f.hot-update.js[39m[22m (vendor) (id hint: vendor) 2.43 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/TicketCard.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/LoadingSpinner.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/AddTicketModal.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/tickets/tickets.tsx[39m[22m [1m[32m165:0-43[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve './tickets.module.scss' in '/Users/tienloc/Developer/Payback/coding-assignment-react/client/src/app/tickets'[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/app.tsx:[32m[1m33:43[22m[39m[1m[39m[22m
+[90mTS2322: [39mType '{ tickets: Ticket[]; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'tickets' does not exist on type 'IntrinsicAttributes'.
+  [0m [90m 31 |[39m       [33m<[39m[33mh1[39m[33m>[39m[33mTicketing[39m [33mApp[39m[33m<[39m[33m/[39m[33mh1[39m[33m>[39m
+   [90m 32 |[39m       [33m<[39m[33mRoutes[39m[33m>[39m
+  [31m[1m>[22m[39m[90m 33 |[39m         [33m<[39m[33mRoute[39m path[33m=[39m[32m"/"[39m element[33m=[39m{[33m<[39m[33mTickets[39m tickets[33m=[39m{tickets} [35m/>} /[39m[33m>[39m
+   [90m    |[39m                                           [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 34 |[39m         {[90m/* Hint: Try `npx nx g component TicketDetails --project=client --no-export` to generate this component  */[39m}
+   [90m 35 |[39m         [33m<[39m[33mRoute[39m path[33m=[39m[32m"/:id"[39m element[33m=[39m{[33m<[39m[33mh2[39m[33m>[39m[33mDetails[39m [33mNot[39m [33mImplemented[39m[33m<[39m[35m/h2>} /[39m[33m>[39m
+   [90m 36 |[39m       [33m<[39m[33m/[39m[33mRoutes[39m[33m>[39m[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (9b30ecf94447df59)
+Entrypoint [1mmain[39m[22m = 7 assets 7 auxiliary assets
+Entrypoint [1mstyles[39m[22m = [1m[32mruntime.js[39m[22m [1m[32m1.def8b7345c8eb68f.hot-update.js[39m[22m [1m[32mstyles.css[39m[22m [1m[32mstyles.js[39m[22m [1m[32m2.def8b7345c8eb68f.hot-update.js[39m[22m 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.def8b7345c8eb68f.hot-update.js[39m[22m (main) 52.8 KiB (javascript) 6 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.def8b7345c8eb68f.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.def8b7345c8eb68f.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m, [1m[32m3.def8b7345c8eb68f.hot-update.js[39m[22m (vendor) (id hint: vendor) 2.43 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/TicketCard.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/LoadingSpinner.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/AddTicketModal.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/tickets/tickets.tsx[39m[22m [1m[32m165:0-43[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve './tickets.module.scss' in '/Users/tienloc/Developer/Payback/coding-assignment-react/client/src/app/tickets'[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/app.tsx:[32m[1m33:43[22m[39m[1m[39m[22m
+[90mTS2322: [39mType '{ tickets: Ticket[]; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'tickets' does not exist on type 'IntrinsicAttributes'.
+  [0m [90m 31 |[39m       [33m<[39m[33mh1[39m[33m>[39m[33mTicketing[39m [33mApp[39m[33m<[39m[33m/[39m[33mh1[39m[33m>[39m
+   [90m 32 |[39m       [33m<[39m[33mRoutes[39m[33m>[39m
+  [31m[1m>[22m[39m[90m 33 |[39m         [33m<[39m[33mRoute[39m path[33m=[39m[32m"/"[39m element[33m=[39m{[33m<[39m[33mTickets[39m tickets[33m=[39m{tickets} [35m/>} /[39m[33m>[39m
+   [90m    |[39m                                           [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 34 |[39m         {[90m/* Hint: Try `npx nx g component TicketDetails --project=client --no-export` to generate this component  */[39m}
+   [90m 35 |[39m         [33m<[39m[33mRoute[39m path[33m=[39m[32m"/:id"[39m element[33m=[39m{[33m<[39m[33mh2[39m[33m>[39m[33mDetails[39m [33mNot[39m [33mImplemented[39m[33m<[39m[35m/h2>} /[39m[33m>[39m
+   [90m 36 |[39m       [33m<[39m[33m/[39m[33mRoutes[39m[33m>[39m[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (1bc43e1648957567)
+Entrypoint [1mmain[39m[22m = 7 assets 7 auxiliary assets
+Entrypoint [1mstyles[39m[22m = [1m[32mruntime.js[39m[22m [1m[32m1.def8b7345c8eb68f.hot-update.js[39m[22m [1m[32mstyles.css[39m[22m [1m[32mstyles.js[39m[22m [1m[32m2.def8b7345c8eb68f.hot-update.js[39m[22m 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.def8b7345c8eb68f.hot-update.js[39m[22m (main) 52.8 KiB (javascript) 6 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.def8b7345c8eb68f.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.def8b7345c8eb68f.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m, [1m[32m3.def8b7345c8eb68f.hot-update.js[39m[22m (vendor) (id hint: vendor) 2.43 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/LoadingSpinner.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/TicketCard.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/AddTicketModal.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/tickets/tickets.tsx[39m[22m [1m[32m165:0-43[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve './tickets.module.scss' in '/Users/tienloc/Developer/Payback/coding-assignment-react/client/src/app/tickets'[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/app.tsx:[32m[1m33:43[22m[39m[1m[39m[22m
+[90mTS2322: [39mType '{ tickets: Ticket[]; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'tickets' does not exist on type 'IntrinsicAttributes'.
+  [0m [90m 31 |[39m       [33m<[39m[33mh1[39m[33m>[39m[33mTicketing[39m [33mApp[39m[33m<[39m[33m/[39m[33mh1[39m[33m>[39m
+   [90m 32 |[39m       [33m<[39m[33mRoutes[39m[33m>[39m
+  [31m[1m>[22m[39m[90m 33 |[39m         [33m<[39m[33mRoute[39m path[33m=[39m[32m"/"[39m element[33m=[39m{[33m<[39m[33mTickets[39m tickets[33m=[39m{tickets} [35m/>} /[39m[33m>[39m
+   [90m    |[39m                                           [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 34 |[39m         {[90m/* Hint: Try `npx nx g component TicketDetails --project=client --no-export` to generate this component  */[39m}
+   [90m 35 |[39m         [33m<[39m[33mRoute[39m path[33m=[39m[32m"/:id"[39m element[33m=[39m{[33m<[39m[33mh2[39m[33m>[39m[33mDetails[39m [33mNot[39m [33mImplemented[39m[33m<[39m[35m/h2>} /[39m[33m>[39m
+   [90m 36 |[39m       [33m<[39m[33m/[39m[33mRoutes[39m[33m>[39m[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (fb6d7ad30edeb354)
+Entrypoint [1mmain[39m[22m = 7 assets 7 auxiliary assets
+Entrypoint [1mstyles[39m[22m = [1m[32mruntime.js[39m[22m [1m[32m1.def8b7345c8eb68f.hot-update.js[39m[22m [1m[32mstyles.css[39m[22m [1m[32mstyles.js[39m[22m [1m[32m2.def8b7345c8eb68f.hot-update.js[39m[22m 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.def8b7345c8eb68f.hot-update.js[39m[22m (main) 52.8 KiB (javascript) 6 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.def8b7345c8eb68f.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.def8b7345c8eb68f.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m, [1m[32m3.def8b7345c8eb68f.hot-update.js[39m[22m (vendor) (id hint: vendor) 2.43 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/LoadingSpinner.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/AddTicketModal.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/TicketCard.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/tickets/tickets.tsx[39m[22m [1m[32m165:0-43[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve './tickets.module.scss' in '/Users/tienloc/Developer/Payback/coding-assignment-react/client/src/app/tickets'[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/app.tsx:[32m[1m33:43[22m[39m[1m[39m[22m
+[90mTS2322: [39mType '{ tickets: Ticket[]; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'tickets' does not exist on type 'IntrinsicAttributes'.
+  [0m [90m 31 |[39m       [33m<[39m[33mh1[39m[33m>[39m[33mTicketing[39m [33mApp[39m[33m<[39m[33m/[39m[33mh1[39m[33m>[39m
+   [90m 32 |[39m       [33m<[39m[33mRoutes[39m[33m>[39m
+  [31m[1m>[22m[39m[90m 33 |[39m         [33m<[39m[33mRoute[39m path[33m=[39m[32m"/"[39m element[33m=[39m{[33m<[39m[33mTickets[39m tickets[33m=[39m{tickets} [35m/>} /[39m[33m>[39m
+   [90m    |[39m                                           [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 34 |[39m         {[90m/* Hint: Try `npx nx g component TicketDetails --project=client --no-export` to generate this component  */[39m}
+   [90m 35 |[39m         [33m<[39m[33mRoute[39m path[33m=[39m[32m"/:id"[39m element[33m=[39m{[33m<[39m[33mh2[39m[33m>[39m[33mDetails[39m [33mNot[39m [33mImplemented[39m[33m<[39m[35m/h2>} /[39m[33m>[39m
+   [90m 36 |[39m       [33m<[39m[33m/[39m[33mRoutes[39m[33m>[39m[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (0c2953282a125009)
+Entrypoint [1mmain[39m[22m = 7 assets 7 auxiliary assets
+Entrypoint [1mstyles[39m[22m = [1m[32mruntime.js[39m[22m [1m[32m1.def8b7345c8eb68f.hot-update.js[39m[22m [1m[32mstyles.css[39m[22m [1m[32mstyles.js[39m[22m [1m[32m2.def8b7345c8eb68f.hot-update.js[39m[22m 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.def8b7345c8eb68f.hot-update.js[39m[22m (main) 56 KiB (javascript) 6 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.def8b7345c8eb68f.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.def8b7345c8eb68f.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m, [1m[32m3.def8b7345c8eb68f.hot-update.js[39m[22m (vendor) (id hint: vendor) 2.43 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/LoadingSpinner.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/TicketCard.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/AddTicketModal.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/tickets/tickets.tsx[39m[22m [1m[32m165:0-43[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve './tickets.module.scss' in '/Users/tienloc/Developer/Payback/coding-assignment-react/client/src/app/tickets'[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/app.tsx:[32m[1m33:43[22m[39m[1m[39m[22m
+[90mTS2322: [39mType '{ tickets: Ticket[]; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'tickets' does not exist on type 'IntrinsicAttributes'.
+  [0m [90m 31 |[39m       [33m<[39m[33mh1[39m[33m>[39m[33mTicketing[39m [33mApp[39m[33m<[39m[33m/[39m[33mh1[39m[33m>[39m
+   [90m 32 |[39m       [33m<[39m[33mRoutes[39m[33m>[39m
+  [31m[1m>[22m[39m[90m 33 |[39m         [33m<[39m[33mRoute[39m path[33m=[39m[32m"/"[39m element[33m=[39m{[33m<[39m[33mTickets[39m tickets[33m=[39m{tickets} [35m/>} /[39m[33m>[39m
+   [90m    |[39m                                           [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 34 |[39m         {[90m/* Hint: Try `npx nx g component TicketDetails --project=client --no-export` to generate this component  */[39m}
+   [90m 35 |[39m         [33m<[39m[33mRoute[39m path[33m=[39m[32m"/:id"[39m element[33m=[39m{[33m<[39m[33mh2[39m[33m>[39m[33mDetails[39m [33mNot[39m [33mImplemented[39m[33m<[39m[35m/h2>} /[39m[33m>[39m
+   [90m 36 |[39m       [33m<[39m[33m/[39m[33mRoutes[39m[33m>[39m[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (879f958c2cfa45b8)
+Entrypoint [1mmain[39m[22m = 7 assets 7 auxiliary assets
+Entrypoint [1mstyles[39m[22m = [1m[32mruntime.js[39m[22m [1m[32m1.def8b7345c8eb68f.hot-update.js[39m[22m [1m[32mstyles.css[39m[22m [1m[32mstyles.js[39m[22m [1m[32m2.def8b7345c8eb68f.hot-update.js[39m[22m 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.def8b7345c8eb68f.hot-update.js[39m[22m (main) 56 KiB (javascript) 6 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.def8b7345c8eb68f.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.def8b7345c8eb68f.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m, [1m[32m3.def8b7345c8eb68f.hot-update.js[39m[22m (vendor) (id hint: vendor) 2.43 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/AddTicketModal.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/LoadingSpinner.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/TicketCard.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/tickets/tickets.tsx[39m[22m [1m[32m165:0-43[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve './tickets.module.scss' in '/Users/tienloc/Developer/Payback/coding-assignment-react/client/src/app/tickets'[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/app.tsx:[32m[1m33:43[22m[39m[1m[39m[22m
+[90mTS2322: [39mType '{ tickets: Ticket[]; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'tickets' does not exist on type 'IntrinsicAttributes'.
+  [0m [90m 31 |[39m       [33m<[39m[33mh1[39m[33m>[39m[33mTicketing[39m [33mApp[39m[33m<[39m[33m/[39m[33mh1[39m[33m>[39m
+   [90m 32 |[39m       [33m<[39m[33mRoutes[39m[33m>[39m
+  [31m[1m>[22m[39m[90m 33 |[39m         [33m<[39m[33mRoute[39m path[33m=[39m[32m"/"[39m element[33m=[39m{[33m<[39m[33mTickets[39m tickets[33m=[39m{tickets} [35m/>} /[39m[33m>[39m
+   [90m    |[39m                                           [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 34 |[39m         {[90m/* Hint: Try `npx nx g component TicketDetails --project=client --no-export` to generate this component  */[39m}
+   [90m 35 |[39m         [33m<[39m[33mRoute[39m path[33m=[39m[32m"/:id"[39m element[33m=[39m{[33m<[39m[33mh2[39m[33m>[39m[33mDetails[39m [33mNot[39m [33mImplemented[39m[33m<[39m[35m/h2>} /[39m[33m>[39m
+   [90m 36 |[39m       [33m<[39m[33m/[39m[33mRoutes[39m[33m>[39m[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (ff31649499cc940e)
+Entrypoint [1mmain[39m[22m = 7 assets 7 auxiliary assets
+Entrypoint [1mstyles[39m[22m = [1m[32mruntime.js[39m[22m [1m[32m1.def8b7345c8eb68f.hot-update.js[39m[22m [1m[32mstyles.css[39m[22m [1m[32mstyles.js[39m[22m [1m[32m2.def8b7345c8eb68f.hot-update.js[39m[22m 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.def8b7345c8eb68f.hot-update.js[39m[22m (main) 81 KiB (javascript) 5.07 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.def8b7345c8eb68f.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.def8b7345c8eb68f.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m, [1m[32m3.def8b7345c8eb68f.hot-update.js[39m[22m (vendor) (id hint: vendor) 2.43 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/AddTicketModal.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/LoadingSpinner.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/TicketCard.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/app.tsx[39m[22m [1m[32m174:0-60[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve '../components/ErrorBoundary' in '/Users/tienloc/Developer/Payback/coding-assignment-react/client/src/app'[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/app.tsx[39m[22m [1m[32m175:0-39[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve './app.module.scss' in '/Users/tienloc/Developer/Payback/coding-assignment-react/client/src/app'[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/ticket-details/ticket-details.tsx[39m[22m [1m[32m133:0-50[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve './ticket-details.module.scss' in '/Users/tienloc/Developer/Payback/coding-assignment-react/client/src/app/ticket-details'[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/tickets/tickets.tsx[39m[22m [1m[32m165:0-43[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve './tickets.module.scss' in '/Users/tienloc/Developer/Payback/coding-assignment-react/client/src/app/tickets'[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/app.tsx:[32m[1m52:31[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module '../components/ErrorBoundary' or its corresponding type declarations.
+  [0m [90m 50 |[39m [36mimport[39m [33mTickets[39m [36mfrom[39m [32m"./tickets/tickets"[39m
+   [90m 51 |[39m [36mimport[39m [33mTicketDetails[39m [36mfrom[39m [32m"./ticket-details/ticket-details"[39m
+  [31m[1m>[22m[39m[90m 52 |[39m [36mimport[39m { [33mErrorBoundary[39m } [36mfrom[39m [32m"../components/ErrorBoundary"[39m
+   [90m    |[39m                               [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 53 |[39m [36mimport[39m styles [36mfrom[39m [32m"./app.module.scss"[39m
+   [90m 54 |[39m
+   [90m 55 |[39m [36mconst[39m [33mApp[39m [33m=[39m () [33m=>[39m {[0m
+
+webpack compiled with [1m[31m5 errors[39m[22m (355be88b3ecec18d)
+Entrypoint [1mmain[39m[22m = 7 assets 7 auxiliary assets
+Entrypoint [1mstyles[39m[22m = [1m[32mruntime.js[39m[22m [1m[32m1.def8b7345c8eb68f.hot-update.js[39m[22m [1m[32mstyles.css[39m[22m [1m[32mstyles.js[39m[22m [1m[32m2.def8b7345c8eb68f.hot-update.js[39m[22m 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.def8b7345c8eb68f.hot-update.js[39m[22m (main) 81 KiB (javascript) 5.07 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.def8b7345c8eb68f.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.def8b7345c8eb68f.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m, [1m[32m3.def8b7345c8eb68f.hot-update.js[39m[22m (vendor) (id hint: vendor) 2.43 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/LoadingSpinner.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/TicketCard.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/AddTicketModal.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/app.tsx[39m[22m [1m[32m175:0-39[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve './app.module.scss' in '/Users/tienloc/Developer/Payback/coding-assignment-react/client/src/app'[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/ticket-details/ticket-details.tsx[39m[22m [1m[32m133:0-50[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve './ticket-details.module.scss' in '/Users/tienloc/Developer/Payback/coding-assignment-react/client/src/app/ticket-details'[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/tickets/tickets.tsx[39m[22m [1m[32m165:0-43[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve './tickets.module.scss' in '/Users/tienloc/Developer/Payback/coding-assignment-react/client/src/app/tickets'[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/app.tsx:[32m[1m52:31[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module '../components/ErrorBoundary' or its corresponding type declarations.
+  [0m [90m 50 |[39m [36mimport[39m [33mTickets[39m [36mfrom[39m [32m"./tickets/tickets"[39m
+   [90m 51 |[39m [36mimport[39m [33mTicketDetails[39m [36mfrom[39m [32m"./ticket-details/ticket-details"[39m
+  [31m[1m>[22m[39m[90m 52 |[39m [36mimport[39m { [33mErrorBoundary[39m } [36mfrom[39m [32m"../components/ErrorBoundary"[39m
+   [90m    |[39m                               [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 53 |[39m [36mimport[39m styles [36mfrom[39m [32m"./app.module.scss"[39m
+   [90m 54 |[39m
+   [90m 55 |[39m [36mconst[39m [33mApp[39m [33m=[39m () [33m=>[39m {[0m
+
+webpack compiled with [1m[31m4 errors[39m[22m (08b878430edd6ac0)
+Entrypoint [1mmain[39m[22m = 7 assets 7 auxiliary assets
+Entrypoint [1mstyles[39m[22m = [1m[32mruntime.js[39m[22m [1m[32m1.def8b7345c8eb68f.hot-update.js[39m[22m [1m[32mstyles.css[39m[22m [1m[32mstyles.js[39m[22m [1m[32m2.def8b7345c8eb68f.hot-update.js[39m[22m 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.def8b7345c8eb68f.hot-update.js[39m[22m (main) 81 KiB (javascript) 5.07 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.def8b7345c8eb68f.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.def8b7345c8eb68f.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m, [1m[32m3.def8b7345c8eb68f.hot-update.js[39m[22m (vendor) (id hint: vendor) 2.43 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/LoadingSpinner.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/AddTicketModal.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/TicketCard.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/app.tsx[39m[22m [1m[32m175:0-39[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve './app.module.scss' in '/Users/tienloc/Developer/Payback/coding-assignment-react/client/src/app'[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/ticket-details/ticket-details.tsx[39m[22m [1m[32m133:0-50[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve './ticket-details.module.scss' in '/Users/tienloc/Developer/Payback/coding-assignment-react/client/src/app/ticket-details'[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/tickets/tickets.tsx[39m[22m [1m[32m165:0-43[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve './tickets.module.scss' in '/Users/tienloc/Developer/Payback/coding-assignment-react/client/src/app/tickets'[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/app.tsx:[32m[1m52:31[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module '../components/ErrorBoundary' or its corresponding type declarations.
+  [0m [90m 50 |[39m [36mimport[39m [33mTickets[39m [36mfrom[39m [32m"./tickets/tickets"[39m
+   [90m 51 |[39m [36mimport[39m [33mTicketDetails[39m [36mfrom[39m [32m"./ticket-details/ticket-details"[39m
+  [31m[1m>[22m[39m[90m 52 |[39m [36mimport[39m { [33mErrorBoundary[39m } [36mfrom[39m [32m"../components/ErrorBoundary"[39m
+   [90m    |[39m                               [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 53 |[39m [36mimport[39m styles [36mfrom[39m [32m"./app.module.scss"[39m
+   [90m 54 |[39m
+   [90m 55 |[39m [36mconst[39m [33mApp[39m [33m=[39m () [33m=>[39m {[0m
+
+webpack compiled with [1m[31m4 errors[39m[22m (7b9251fc9a8ebce4)
+Entrypoint [1mmain[39m[22m = 7 assets 7 auxiliary assets
+Entrypoint [1mstyles[39m[22m = [1m[32mruntime.js[39m[22m [1m[32m1.def8b7345c8eb68f.hot-update.js[39m[22m [1m[32mstyles.css[39m[22m [1m[32mstyles.js[39m[22m [1m[32m2.def8b7345c8eb68f.hot-update.js[39m[22m 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.def8b7345c8eb68f.hot-update.js[39m[22m (main) 80.8 KiB (javascript) 5.07 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.def8b7345c8eb68f.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.def8b7345c8eb68f.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m, [1m[32m3.def8b7345c8eb68f.hot-update.js[39m[22m (vendor) (id hint: vendor) 2.43 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/LoadingSpinner.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/TicketCard.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/AddTicketModal.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/app.tsx[39m[22m [1m[32m173:0-39[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve './app.module.scss' in '/Users/tienloc/Developer/Payback/coding-assignment-react/client/src/app'[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/ticket-details/ticket-details.tsx[39m[22m [1m[32m133:0-50[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve './ticket-details.module.scss' in '/Users/tienloc/Developer/Payback/coding-assignment-react/client/src/app/ticket-details'[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/tickets/tickets.tsx[39m[22m [1m[32m165:0-43[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve './tickets.module.scss' in '/Users/tienloc/Developer/Payback/coding-assignment-react/client/src/app/tickets'[39m[22m
+
+webpack compiled with [1m[31m3 errors[39m[22m (7fd0d46058b67351)
+Entrypoint [1mmain[39m[22m = 7 assets 7 auxiliary assets
+Entrypoint [1mstyles[39m[22m = [1m[32mruntime.js[39m[22m [1m[32m1.def8b7345c8eb68f.hot-update.js[39m[22m [1m[32mstyles.css[39m[22m [1m[32mstyles.js[39m[22m [1m[32m2.def8b7345c8eb68f.hot-update.js[39m[22m 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.def8b7345c8eb68f.hot-update.js[39m[22m (main) 82.9 KiB (javascript) 11.2 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.def8b7345c8eb68f.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.def8b7345c8eb68f.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m, [1m[32m3.def8b7345c8eb68f.hot-update.js[39m[22m (vendor) (id hint: vendor) 2.43 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/LoadingSpinner.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/TicketCard.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/AddTicketModal.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/app/ticket-details/TicketDetails.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/app.tsx[39m[22m [1m[32m173:0-39[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve './app.module.scss' in '/Users/tienloc/Developer/Payback/coding-assignment-react/client/src/app'[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/tickets/tickets.tsx[39m[22m [1m[32m165:0-43[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve './tickets.module.scss' in '/Users/tienloc/Developer/Payback/coding-assignment-react/client/src/app/tickets'[39m[22m
+
+webpack compiled with [1m[31m2 errors[39m[22m (d01aecf781c4fef6)
+Entrypoint [1mmain[39m[22m = 7 assets 7 auxiliary assets
+Entrypoint [1mstyles[39m[22m = [1m[32mruntime.js[39m[22m [1m[32m1.def8b7345c8eb68f.hot-update.js[39m[22m [1m[32mstyles.css[39m[22m [1m[32mstyles.js[39m[22m [1m[32m2.def8b7345c8eb68f.hot-update.js[39m[22m 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.def8b7345c8eb68f.hot-update.js[39m[22m (main) 84.1 KiB (javascript) 15.1 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.def8b7345c8eb68f.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.def8b7345c8eb68f.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m, [1m[32m3.def8b7345c8eb68f.hot-update.js[39m[22m (vendor) (id hint: vendor) 2.43 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/app/ticket-details/TicketDetails.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/app/tickets/tickets.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/LoadingSpinner.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/TicketCard.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/AddTicketModal.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/app.tsx[39m[22m [1m[32m173:0-39[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve './app.module.scss' in '/Users/tienloc/Developer/Payback/coding-assignment-react/client/src/app'[39m[22m
+
+webpack compiled with [1m[31m1 error[39m[22m (da937c03619b16e8)
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 3.5 MiB (8.03 MiB) = 7 assets 7 auxiliary assets
+Entrypoint [1mstyles[39m[22m 196 KiB (227 KiB) = [1m[32mruntime.js[39m[22m 47.3 KiB [1m[32m1.def8b7345c8eb68f.hot-update.js[39m[22m 351 bytes [1m[32mstyles.css[39m[22m 6.73 KiB [1m[32mstyles.js[39m[22m 142 KiB [1m[32m2.def8b7345c8eb68f.hot-update.js[39m[22m 521 bytes 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.def8b7345c8eb68f.hot-update.js[39m[22m (main) 84.6 KiB (javascript) 16.1 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.def8b7345c8eb68f.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.def8b7345c8eb68f.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m, [1m[32m3.def8b7345c8eb68f.hot-update.js[39m[22m (vendor) (id hint: vendor) 2.43 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/app/tickets/tickets.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/app/ticket-details/TicketDetails.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/LoadingSpinner.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/TicketCard.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/AddTicketModal.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/app/app.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+webpack compiled [1m[32msuccessfully[39m[22m (2cb30bfe5266ba2b)
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 2.6 MiB (5.09 MiB) = 6 assets 6 auxiliary assets
+Entrypoint [1mstyles[39m[22m 196 KiB (227 KiB) = [1m[32mruntime.js[39m[22m 47.3 KiB [1m[32m1.2cb30bfe5266ba2b.hot-update.js[39m[22m 351 bytes [1m[32mstyles.css[39m[22m 6.73 KiB [1m[32mstyles.js[39m[22m 142 KiB [1m[32m2.2cb30bfe5266ba2b.hot-update.js[39m[22m 521 bytes 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.2cb30bfe5266ba2b.hot-update.js[39m[22m (main) 84.6 KiB (javascript) 16.1 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.2cb30bfe5266ba2b.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.2cb30bfe5266ba2b.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 2.43 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/app/tickets/tickets.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/app/ticket-details/TicketDetails.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/app/app.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/LoadingSpinner.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/TicketCard.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/AddTicketModal.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+webpack compiled [1m[32msuccessfully[39m[22m (14ee103a3746c352)
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 2.6 MiB (5.09 MiB) = 6 assets 6 auxiliary assets
+Entrypoint [1mstyles[39m[22m 196 KiB (227 KiB) = [1m[32mruntime.js[39m[22m 47.3 KiB [1m[32m1.14ee103a3746c352.hot-update.js[39m[22m 351 bytes [1m[32mstyles.css[39m[22m 6.73 KiB [1m[32mstyles.js[39m[22m 142 KiB [1m[32m2.14ee103a3746c352.hot-update.js[39m[22m 521 bytes 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.14ee103a3746c352.hot-update.js[39m[22m (main) 84.6 KiB (javascript) 16.1 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.14ee103a3746c352.hot-update.js[39m[22m (runtime) 31.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.14ee103a3746c352.hot-update.js[39m[22m (styles) 135 KiB (javascript) 6.69 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 2.43 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/app/app.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/app/ticket-details/TicketDetails.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/app/tickets/tickets.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/LoadingSpinner.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/AddTicketModal.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+[1mLOG from ./node_modules/sass-loader/dist/cjs.js sass-loader ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[3]!./client/src/components/TicketCard.module.scss[39m[22m
+<w> [1m[33mDeprecation The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mMore info: https://sass-lang.com/d/legacy-js-api[39m[22m
+<w> [1m[33m[39m[22m
+<w> [1m[33mnull[39m[22m
+
+webpack compiled [1m[32msuccessfully[39m[22m (6ff558ef54b8f4d5)

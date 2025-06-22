@@ -1,0 +1,28 @@
+
+[31m✘[39m node v22.16.0 is [31mnot yet supported[39m in the Community edition of [33mConsole Ninja[39m.
+We are working hard on it for you [36mhttps://tinyurl.com/3h9mtwra[39m.
+
+Estimated release dates:
+  - Community users: [36maround 20th July, 2025 [1m(subject to team availability)[22m[39m
+[33m  - PRO users[39m:       [1m[32mpriority access is available now[39m[22m
+
+asset main.js 8.73 KiB [emitted] [minimized] (name: main) 1 related asset
+asset assets/.gitkeep 0 bytes [emitted] [from: server/src/assets/.gitkeep] [copied]
+cacheable modules 13.9 KiB
+  modules by path ./server/src/users/*.ts 3.38 KiB
+    ./server/src/users/users.module.ts 616 bytes [built] [code generated]
+    + 2 modules
+  modules by path ./server/src/tickets/*.ts 8.95 KiB
+    ./server/src/tickets/tickets.module.ts 701 bytes [built] [code generated]
+    ./server/src/tickets/tickets.service.ts 3.01 KiB [built] [code generated]
+    ./server/src/tickets/tickets.controller.ts 5.26 KiB [built] [code generated]
+  ./server/src/main.ts 795 bytes [built] [code generated]
+  ./server/src/app/app.module.ts 532 bytes [built] [code generated]
+  ./server/src/utils/random-delay.ts 318 bytes [built] [code generated]
+modules by path external "@nestjs/ 84 bytes
+  external "@nestjs/common" 42 bytes [built] [code generated]
+  external "@nestjs/core" 42 bytes [built] [code generated]
+external "tslib" 42 bytes [built] [code generated]
+webpack 5.99.9 compiled successfully in 559 ms
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
