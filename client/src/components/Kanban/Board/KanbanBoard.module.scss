@@ -1,0 +1,146 @@
+.kanbanBoard {
+  display: flex;
+  gap: var(--spacing-lg);
+  overflow-x: auto;
+  padding-bottom: var(--spacing-md);
+  min-height: 600px;
+}
+
+.column {
+  flex: 1;
+  min-width: 300px;
+  background: var(--color-neutral-50);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  border: 1px solid var(--color-border-light);
+
+  .columnHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--color-border);
+
+    .columnTitle {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-sm);
+      font-weight: var(--font-weight-semibold);
+      color: var(--color-text-primary);
+      font-size: var(--font-size-base);
+
+      .statusIcon {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+
+        &.todo {
+          background-color: var(--color-neutral-400);
+        }
+
+        &.inprogress {
+          background-color: var(--color-warning);
+        }
+
+        &.done {
+          background-color: var(--color-success);
+        }
+      }
+    }
+
+    .ticketCount {
+      background: var(--color-neutral-200);
+      color: var(--color-text-secondary);
+      padding: var(--spacing-xs) var(--spacing-sm);
+      border-radius: var(--radius-xl);
+      font-size: var(--font-size-xs);
+      font-weight: var(--font-weight-medium);
+    }
+  }
+
+  &.todo {
+    .columnHeader {
+      border-bottom-color: var(--color-neutral-400);
+    }
+  }
+
+  &.inprogress {
+    .columnHeader {
+      border-bottom-color: var(--color-warning);
+    }
+  }
+
+  &.done {
+    .columnHeader {
+      border-bottom-color: var(--color-success);
+    }
+  }
+}
+
+.ticketsList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  min-height: 200px;
+}
+
+.dropZone {
+  min-height: 200px;
+  border: 2px dashed transparent;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+
+  &.dragOver {
+    border-color: var(--color-primary);
+    background-color: var(--color-primary-light);
+  }
+}
+
+.emptyColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xl);
+  color: var(--color-text-tertiary);
+  text-align: center;
+
+  .emptyIcon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: var(--spacing-md);
+    opacity: 0.5;
+  }
+
+  p {
+    font-size: var(--font-size-sm);
+    margin: 0;
+  }
+}
+
+.addTicketButton {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  width: 100%;
+  padding: var(--spacing-sm);
+  border: 1px dashed var(--color-border);
+  background: transparent;
+  border-radius: var(--radius-md);
+  color: var(--color-text-tertiary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  font-size: var(--font-size-sm);
+
+  &:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    background-color: var(--color-primary-light);
+  }
+
+  .icon {
+    width: 16px;
+    height: 16px;
+  }
+}

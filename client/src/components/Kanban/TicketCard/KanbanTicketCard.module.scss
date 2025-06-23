@@ -1,0 +1,131 @@
+.ticketCard {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  position: relative;
+
+  &:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-border-dark);
+    transform: translateY(-1px);
+  }
+
+  &.dragging {
+    opacity: 0.5;
+    transform: rotate(5deg);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .ticketHeader {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-sm);
+
+    .ticketId {
+      font-size: var(--font-size-xs);
+      font-weight: var(--font-weight-medium);
+      color: var(--color-text-tertiary);
+      background: var(--color-neutral-100);
+      padding: var(--spacing-xs) var(--spacing-sm);
+      border-radius: var(--radius-sm);
+    }
+
+    .priorityIndicator {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--color-warning);
+    }
+  }
+
+  .ticketTitle {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-primary);
+    line-height: 1.4;
+    margin-bottom: var(--spacing-md);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .ticketFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .assignee {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-xs);
+      font-size: var(--font-size-xs);
+      color: var(--color-text-secondary);
+
+      .avatar {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: var(--color-primary);
+        color: var(--color-text-inverse);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: var(--font-weight-medium);
+        font-size: 10px;
+      }
+    }
+
+    .statusBadge {
+      font-size: var(--font-size-xs);
+      font-weight: var(--font-weight-medium);
+      padding: var(--spacing-xs) var(--spacing-sm);
+      border-radius: var(--radius-sm);
+
+      &.todo {
+        background: var(--color-neutral-100);
+        color: var(--color-text-secondary);
+      }
+
+      &.inprogress {
+        background: var(--color-warning-light);
+        color: var(--color-warning-dark);
+      }
+
+      &.done {
+        background: var(--color-success-light);
+        color: var(--color-success-dark);
+      }
+    }
+  }
+
+  .dragHandle {
+    position: absolute;
+    top: var(--spacing-sm);
+    right: var(--spacing-sm);
+    opacity: 0;
+    transition: opacity var(--transition-fast);
+    color: var(--color-text-tertiary);
+    cursor: grab;
+
+    &:active {
+      cursor: grabbing;
+    }
+  }
+
+  &:hover .dragHandle {
+    opacity: 1;
+  }
+}
+
+.unassigned {
+  color: var(--color-text-tertiary);
+  font-style: italic;
+}
