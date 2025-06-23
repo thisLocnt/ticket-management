@@ -4,10 +4,10 @@ import { useEffect, useState } from "react";
 import { Plus, Filter, Search, LayoutGrid, List } from "lucide-react";
 import { useTicketStore } from "../../store/ticket-store";
 import { ticketApi } from "../../api/ticket";
-import { TicketCard } from "../../components/TicketCard";
+import { TicketCard } from "../../components/TicketCard/TicketCard";
 import { KanbanBoard } from "client/src/components/Kanban/Board/KanbanBoard";
-import { AddTicketModal } from "../../components/AddTicketModal";
-import { LoadingSpinner } from "../../components/LoadingSpinner";
+import { AddTicketModal } from "../../components/AddTicketModal/AddTicketModal";
+import { LoadingSpinner } from "../../components/LoadingSpinner/LoadingSpinner";
 import styles from "./tickets.module.scss";
 
 export function Tickets() {

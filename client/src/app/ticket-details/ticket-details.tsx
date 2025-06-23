@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 import { useTicketStore } from "../../store/ticket-store";
 import { ticketApi } from "../../api/ticket";
-import { LoadingSpinner } from "../../components/LoadingSpinner";
+import { LoadingSpinner } from "../../components/LoadingSpinner/LoadingSpinner";
 import styles from "./TicketDetails.module.scss";
 
 export function TicketDetails() {

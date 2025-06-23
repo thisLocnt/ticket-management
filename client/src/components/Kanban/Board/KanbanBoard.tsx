@@ -1,16 +1,19 @@
 "use client";
 
+import type React from "react";
+
 import { useState } from "react";
 import {
   DndContext,
   type DragEndEvent,
-  type DragOverEvent,
   DragOverlay,
   type DragStartEvent,
   PointerSensor,
   useSensor,
   useSensors,
+  closestCenter,
 } from "@dnd-kit/core";
+import { useDroppable } from "@dnd-kit/core";
 import { Plus, Circle, Clock, CheckCircle2 } from "lucide-react";
 import {
   useTicketStore,
@@ -19,7 +22,7 @@ import {
 } from "client/src/store/ticket-store";
 import { ticketApi } from "client/src/api/ticket";
 import { KanbanTicketCard } from "../TicketCard/KanbanTicketCard";
-import { AddTicketModal } from "../../AddTicketModal";
+import { AddTicketModal } from "../../AddTicketModal/AddTicketModal";
 import styles from "./KanbanBoard.module.scss";
 
 const COLUMNS = [
@@ -43,13 +46,37 @@ const COLUMNS = [
   },
 ];
 
+function DroppableColumn({
+  id,
+  children,
+  className,
+}: {
+  id: string;
+  children: React.ReactNode;
+  className?: string;
+}) {
+  const { isOver, setNodeRef } = useDroppable({
+    id,
+  });
+
+  return (
+    <div
+      ref={setNodeRef}
+      className={`${styles["dropZone"]} ${isOver ? styles["dragOver"] : ""} ${
+        className || ""
+      }`}
+      data-column={id}
+    >
+      {children}
+    </div>
+  );
+}
+
 export function KanbanBoard() {
-  const { getTicketsByStatus, users, moveTicket, addTicket } = useTicketStore();
+  const { getTicketsByStatus, users, moveTicket, addTicket, updateTicket } =
+    useTicketStore();
   const [activeTicket, setActiveTicket] = useState<Ticket | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [dragOverColumn, setDragOverColumn] = useState<TicketStatus | null>(
-    null
-  );
 
   const sensors = useSensors(
     useSensor(PointerSensor, {
@@ -69,44 +96,61 @@ export function KanbanBoard() {
     setActiveTicket(ticket || null);
   };
 
-  const handleDragOver = (event: DragOverEvent) => {
-    const { over } = event;
-    if (
-      over &&
-      typeof over.id === "string" &&
-      COLUMNS.some((col) => col.id === over.id)
-    ) {
-      setDragOverColumn(over.id as TicketStatus);
-    } else {
-      setDragOverColumn(null);
-    }
-  };
-
   const handleDragEnd = async (event: DragEndEvent) => {
     const { active, over } = event;
 
     setActiveTicket(null);
-    setDragOverColumn(null);
 
     if (!over) return;
 
     const ticketId = active.id as number;
     const newStatus = over.id as TicketStatus;
 
-    if (COLUMNS.some((col) => col.id === newStatus)) {
-      moveTicket(ticketId, newStatus);
+    // Check if the drop target is a valid column
+    if (!COLUMNS.some((col) => col.id === newStatus)) {
+      return;
+    }
 
-      // Update backend
-      try {
-        if (newStatus === "done") {
-          await ticketApi.completeTicket(ticketId);
-        } else {
-          await ticketApi.incompleteTicket(ticketId);
-        }
-      } catch (error) {
-        console.error("Failed to update ticket status:", error);
-        // Optionally revert the optimistic update
+    const currentTicket = getTicketsByStatus("todo")
+      .concat(getTicketsByStatus("inprogress"))
+      .concat(getTicketsByStatus("done"))
+      .find((t) => t.id === ticketId);
+
+    if (!currentTicket || currentTicket.status === newStatus) {
+      return; // No change needed
+    }
+
+    // Optimistically update the UI
+    moveTicket(ticketId, newStatus);
+
+    // Update backend based on status transitions
+    try {
+      const wasCompleted = currentTicket.status === "done";
+      const willBeCompleted = newStatus === "done";
+
+      if (!wasCompleted && willBeCompleted) {
+        // Moving to done - mark as complete
+        await ticketApi.completeTicket(ticketId);
+      } else if (wasCompleted && !willBeCompleted) {
+        // Moving from done to any other status - mark as incomplete
+        await ticketApi.incompleteTicket(ticketId);
       }
+      // For todo <-> inprogress transitions, no additional API call needed
+      // as the status is handled by the moveTicket action
+
+      // Ensure the ticket state is consistent
+      updateTicket(ticketId, {
+        status: newStatus,
+        completed: newStatus === "done",
+      });
+    } catch (error) {
+      console.error("Failed to update ticket status:", error);
+      // Revert the optimistic update on error
+      moveTicket(ticketId, currentTicket.status);
+
+      // Show user-friendly error message
+      // You could add a toast notification here
+      alert(`Failed to update ticket status. Please try again.`);
     }
   };
 
@@ -123,8 +167,8 @@ export function KanbanBoard() {
     <>
       <DndContext
         sensors={sensors}
+        collisionDetection={closestCenter}
         onDragStart={handleDragStart}
-        onDragOver={handleDragOver}
         onDragEnd={handleDragEnd}
       >
         <div className={styles["kanbanBoard"]}>
@@ -149,12 +193,7 @@ export function KanbanBoard() {
                   <div className={styles["ticketCount"]}>{tickets.length}</div>
                 </div>
 
-                <div
-                  className={`${styles["dropZone"]} ${
-                    dragOverColumn === column.id ? styles["dragOver"] : ""
-                  }`}
-                  data-column={column.id}
-                >
+                <DroppableColumn id={column.id}>
                   <div className={styles["ticketsList"]}>
                     {tickets.length === 0 ? (
                       <div className={styles["emptyColumn"]}>
@@ -181,7 +220,7 @@ export function KanbanBoard() {
                       Add a ticket
                     </button>
                   )}
-                </div>
+                </DroppableColumn>
               </div>
             );
           })}

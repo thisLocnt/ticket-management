@@ -7,48 +7,42 @@ import { Ticket, User as UserType } from "client/src/store/ticket-store";
 import styles from "./KanbanTicketCard.module.scss";
 
 interface KanbanTicketCardProps {
-  ticket: Ticket;
-  users: UserType[];
-  isDragging?: boolean;
+  ticket: Ticket
+  users: UserType[]
+  isDragging?: boolean
 }
 
-export function KanbanTicketCard({
-  ticket,
-  users,
-  isDragging = false,
-}: KanbanTicketCardProps) {
+export function KanbanTicketCard({ ticket, users, isDragging = false }: KanbanTicketCardProps) {
   const { attributes, listeners, setNodeRef, transform } = useDraggable({
     id: ticket.id,
-  });
+  })
 
-  const assignee = users.find((user) => user.id === ticket.assigneeId);
+  const assignee = users.find((user) => user.id === ticket.assigneeId)
 
   const style = transform
     ? {
         transform: `translate3d(${transform.x}px, ${transform.y}px, 0)`,
       }
-    : undefined;
+    : undefined
 
   const getStatusLabel = (status: string) => {
     switch (status) {
       case "todo":
-        return "To Do";
+        return "To Do"
       case "inprogress":
-        return "In Progress";
+        return "In Progress"
       case "done":
-        return "Done";
+        return "Done"
       default:
-        return "To Do";
+        return "To Do"
     }
-  };
+  }
 
   return (
     <div
       ref={setNodeRef}
       style={style}
-      className={`${styles["ticketCard"]} ${
-        isDragging ? styles["dragging"] : ""
-      }`}
+      className={`${styles["ticketCard"]} ${isDragging ? styles["dragging"] : ""}`}
       {...attributes}
       {...listeners}
     >
@@ -64,9 +58,7 @@ export function KanbanTicketCard({
           <div className={styles["assignee"]}>
             {assignee ? (
               <>
-                <div className={styles["avatar"]}>
-                  {assignee.name.charAt(0).toUpperCase()}
-                </div>
+                <div className={styles["avatar"]}>{assignee.name.charAt(0).toUpperCase()}</div>
                 <span>{assignee.name}</span>
               </>
             ) : (
@@ -77,9 +69,7 @@ export function KanbanTicketCard({
             )}
           </div>
 
-          <div className={`${styles["statusBadge"]} ${styles[ticket.status]}`}>
-            {getStatusLabel(ticket.status)}
-          </div>
+          <div className={`${styles["statusBadge"]} ${styles[ticket.status]}`}>{getStatusLabel(ticket.status)}</div>
         </div>
       </Link>
 
@@ -87,5 +77,5 @@ export function KanbanTicketCard({
         <GripVertical size={16} />
       </div>
     </div>
-  );
+  )
 }

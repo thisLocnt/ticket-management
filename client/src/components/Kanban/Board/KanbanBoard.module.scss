@@ -78,23 +78,24 @@
   }
 }
 
-.ticketsList {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-sm);
-  min-height: 200px;
-}
-
 .dropZone {
   min-height: 200px;
   border: 2px dashed transparent;
   border-radius: var(--radius-md);
   transition: all var(--transition-fast);
+  padding: var(--spacing-xs);
 
   &.dragOver {
     border-color: var(--color-primary);
     background-color: var(--color-primary-light);
   }
+}
+
+.ticketsList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  min-height: 200px;
 }
 
 .emptyColumn {
@@ -132,6 +133,7 @@
   cursor: pointer;
   transition: all var(--transition-fast);
   font-size: var(--font-size-sm);
+  margin-top: var(--spacing-sm);
 
   &:hover {
     border-color: var(--color-primary);

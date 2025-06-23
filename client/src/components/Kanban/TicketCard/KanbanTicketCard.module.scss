@@ -20,6 +20,7 @@
     opacity: 0.5;
     transform: rotate(5deg);
     box-shadow: var(--shadow-xl);
+    z-index: var(--z-modal);
   }
 
   .ticketHeader {
@@ -123,6 +124,12 @@
   &:hover .dragHandle {
     opacity: 1;
   }
+}
+
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 .unassigned {
