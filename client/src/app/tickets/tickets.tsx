@@ -2,12 +2,12 @@
 
 import { useEffect, useState } from "react";
 import { Plus, Filter, Search, LayoutGrid, List } from "lucide-react";
-import { useTicketStore } from "../../store/ticket-store";
+import { TicketStatus, useTicketStore } from "../../store/ticket-store";
 import { ticketApi } from "../../api/ticket";
-import { TicketCard } from "../../components/TicketCard/TicketCard";
+import { LoadingSpinner } from "client/src/components/loading-spinner/LoadingSpinner";
 import { KanbanBoard } from "client/src/components/Kanban/Board/KanbanBoard";
-import { AddTicketModal } from "../../components/AddTicketModal/AddTicketModal";
-import { LoadingSpinner } from "../../components/loading-spinner/LoadingSpinner";
+import { TicketCard } from "client/src/components/TicketCard/TicketCard";
+import { AddTicketModal } from "client/src/components/AddTicketModal/AddTicketModal";
 import styles from "./tickets.module.scss";
 
 export function Tickets() {
@@ -54,10 +54,35 @@ export function Tickets() {
     fetchData();
   }, [setTickets, setUsers, setLoading, setError]);
 
-  const handleCreateTicket = async (description: string) => {
+  const handleCreateTicket = async (data: {
+    description: string;
+    status: TicketStatus;
+    assigneeId: number | null;
+  }) => {
     try {
-      const newTicket = await ticketApi.createTicket(description);
-      addTicket({ ...newTicket, status: "todo" });
+      // Create the ticket with the title as description (server requirement)
+      const newTicket = await ticketApi.createTicket(
+        data.description
+      );
+
+      // Handle assignment if specified
+      if (data.assigneeId) {
+        await ticketApi.assignTicket(newTicket.id, data.assigneeId);
+        newTicket.assigneeId = data.assigneeId;
+      }
+
+      // Handle completion status if creating as done
+      if (data.status === "done") {
+        await ticketApi.completeTicket(newTicket.id);
+        newTicket.completed = true;
+      }
+
+      // Add to store with proper status
+      addTicket({
+        ...newTicket,
+        status: data.status,
+        completed: data.status === "done",
+      });
     } catch (err) {
       throw new Error("Failed to create ticket");
     }
@@ -83,7 +108,6 @@ export function Tickets() {
       <div className={styles["loadingContainer"]}>
         <div className={styles["loadingContent"]}>
           <LoadingSpinner size="lg" />
-          <p>Loading tickets...</p>
         </div>
       </div>
     );
@@ -103,7 +127,7 @@ export function Tickets() {
         {/* Controls */}
         <div className={styles["controls"]}>
           <div className={styles["leftControls"]}>
-            <div className={styles["viewToggle"]}>
+            {/* <div className={styles["viewToggle"]}>
               <button
                 onClick={() => setViewMode("kanban")}
                 className={viewMode === "kanban" ? styles["active"] : ""}
@@ -118,7 +142,7 @@ export function Tickets() {
                 <List size={16} />
                 List
               </button>
-            </div>
+            </div> */}
 
             {viewMode === "list" && (
               <div className={styles["filterGroup"]}>
@@ -212,6 +236,7 @@ export function Tickets() {
           isOpen={isModalOpen}
           onClose={() => setIsModalOpen(false)}
           onSubmit={handleCreateTicket}
+          users={users}
         />
       </div>
     </div>

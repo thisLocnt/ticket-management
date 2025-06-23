@@ -24,7 +24,6 @@ export function InlineTicketForm({
   onSubmit,
   onCancel,
 }: InlineTicketFormProps) {
-  const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [status, setStatus] = useState<TicketStatus>("todo");
   const [assigneeId, setAssigneeId] = useState<number | null>(null);
@@ -111,7 +110,7 @@ export function InlineTicketForm({
         <button
           type="submit"
           className={`${styles["button"]} ${styles["primary"]}`}
-          disabled={isSubmitting || !title.trim()}
+          disabled={isSubmitting}
         >
           {isSubmitting ? (
             <>

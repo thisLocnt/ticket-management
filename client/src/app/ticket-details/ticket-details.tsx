@@ -82,7 +82,6 @@ export function TicketDetails() {
       <div className={styles["loadingContainer"]}>
         <div className={styles["loadingContent"]}>
           <LoadingSpinner size="lg" />
-          <p>Loading ticket...</p>
         </div>
       </div>
     );
