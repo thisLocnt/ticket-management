@@ -1,13 +1,14 @@
 import { create } from "zustand";
 
-export type TicketStatus = "todo" | "inprogress" | "done";
+// Simplified to match server API - only TODO and DONE
+export type TicketStatus = "todo" | "done";
 
 export interface Ticket {
   id: number;
   description: string;
   assigneeId: number | null;
   completed: boolean;
-  status: TicketStatus;
+  status?: TicketStatus; // Optional for backward compatibility
 }
 
 export interface User {
@@ -96,7 +97,9 @@ export const useTicketStore = create<TicketStore>((set, get) => ({
               completed:
                 updates.completed !== undefined
                   ? updates.completed
-                  : getCompletedFromStatus(updates.status || ticket.status),
+                  : getCompletedFromStatus(
+                      updates.status || ticket.status || "todo"
+                    ),
             }
           : ticket
       ),
@@ -137,6 +140,10 @@ export const useTicketStore = create<TicketStore>((set, get) => ({
 
   getTicketsByStatus: (status) => {
     const { tickets } = get();
-    return tickets.filter((ticket) => ticket.status === status);
+    return tickets.filter((ticket) => {
+      const ticketStatus =
+        ticket.status || getStatusFromCompleted(ticket.completed);
+      return ticketStatus === status;
+    });
   },
 }));

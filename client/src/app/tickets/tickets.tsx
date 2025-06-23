@@ -7,7 +7,7 @@ import { ticketApi } from "../../api/ticket";
 import { TicketCard } from "../../components/TicketCard/TicketCard";
 import { KanbanBoard } from "client/src/components/Kanban/Board/KanbanBoard";
 import { AddTicketModal } from "../../components/AddTicketModal/AddTicketModal";
-import { LoadingSpinner } from "../../components/LoadingSpinner/LoadingSpinner";
+import { LoadingSpinner } from "../../components/loading-spinner/LoadingSpinner";
 import styles from "./tickets.module.scss";
 
 export function Tickets() {

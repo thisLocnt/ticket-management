@@ -3,7 +3,7 @@
 import type React from "react";
 import { useState } from "react";
 import { X, Plus } from "lucide-react";
-import { LoadingSpinner } from "../LoadingSpinner/LoadingSpinner";
+import { LoadingSpinner } from "../loading-spinner/LoadingSpinner";
 import styles from "./AddTicketModal.module.scss";
 
 interface AddTicketModalProps {

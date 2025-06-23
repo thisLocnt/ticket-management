@@ -1,4 +1,3 @@
-/* // Jira-inspired Color System */
 :root {
   --color-primary: #0052cc;
   --color-primary-hover: #0747a6;
@@ -9,6 +8,18 @@
   --color-secondary-hover: #344563;
   --color-secondary-light: #f4f5f7;
   --color-secondary-dark: #253858;
+
+  --color-todo: #0052cc;
+  --color-todo-light: #deebff;
+  --color-todo-dark: #003884;
+
+  --color-inprogress: #ffab00;
+  --color-inprogress-light: #fffae6;
+  --color-inprogress-dark: #b8860b;
+
+  --color-done: #36b37e;
+  --color-done-light: #e3fcef;
+  --color-done-dark: #1f7a54;
 
   --color-success: #36b37e;
   --color-success-hover: #2d9f6b;
@@ -89,4 +100,12 @@
   --transition-fast: 150ms ease-in-out;
   --transition-normal: 200ms ease-in-out;
   --transition-slow: 300ms ease-in-out;
+
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
 }

@@ -1,6 +1,7 @@
 import type { Ticket, User } from "client/src/store/ticket-store";
 import { CheckCircle, Circle, UserIcon, Calendar } from "lucide-react";
 import { Link } from "react-router-dom";
+import { StatusBadge } from "../status-badge/StatusBadge";
 import styles from "./TicketCard.module.scss";
 
 interface TicketCardProps {
@@ -11,27 +12,11 @@ interface TicketCardProps {
 export const TicketCard = ({ ticket, users }: TicketCardProps) => {
   const assignee = users.find((user) => user.id === ticket.assigneeId);
 
-  const getStatusBadgeClass = () => {
+  const getStatusForBadge = () => {
     if (ticket.status) {
-      return styles[ticket.status];
+      return ticket.status;
     }
-    return ticket.completed ? styles["completed"] : styles["pending"];
-  };
-
-  const getStatusLabel = () => {
-    if (ticket.status) {
-      switch (ticket.status) {
-        case "todo":
-          return "To Do";
-        case "inprogress":
-          return "In Progress";
-        case "done":
-          return "Done";
-        default:
-          return "To Do";
-      }
-    }
-    return ticket.completed ? "Done" : "To Do";
+    return ticket.completed ? "completed" : "pending";
   };
 
   return (
@@ -71,9 +56,7 @@ export const TicketCard = ({ ticket, users }: TicketCardProps) => {
           </div>
         </div>
 
-        <div className={`${styles["statusBadge"]} ${getStatusBadgeClass()}`}>
-          {getStatusLabel()}
-        </div>
+        <StatusBadge status={getStatusForBadge()} />
       </div>
     </Link>
   );

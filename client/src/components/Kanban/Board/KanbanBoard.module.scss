@@ -36,15 +36,11 @@
         border-radius: 50%;
 
         &.todo {
-          background-color: var(--color-neutral-400);
-        }
-
-        &.inprogress {
-          background-color: var(--color-warning);
+          background-color: var(--color-todo);
         }
 
         &.done {
-          background-color: var(--color-success);
+          background-color: var(--color-done);
         }
       }
     }
@@ -61,19 +57,13 @@
 
   &.todo {
     .columnHeader {
-      border-bottom-color: var(--color-neutral-400);
-    }
-  }
-
-  &.inprogress {
-    .columnHeader {
-      border-bottom-color: var(--color-warning);
+      border-bottom-color: var(--color-todo);
     }
   }
 
   &.done {
     .columnHeader {
-      border-bottom-color: var(--color-success);
+      border-bottom-color: var(--color-done);
     }
   }
 }

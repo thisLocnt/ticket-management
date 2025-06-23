@@ -57,7 +57,6 @@ export const ticketApi = {
       }
     );
     if (!response.ok) throw new Error("Failed to assign ticket");
-    // Backend returns 204, so no JSON response
   },
 
   async unassignTicket(ticketId: number): Promise<void> {

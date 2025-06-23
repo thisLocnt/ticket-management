@@ -1,7 +1,6 @@
 "use client";
 
 import type React from "react";
-
 import { useState } from "react";
 import {
   DndContext,
@@ -14,29 +13,25 @@ import {
   closestCenter,
 } from "@dnd-kit/core";
 import { useDroppable } from "@dnd-kit/core";
-import { Plus, Circle, Clock, CheckCircle2 } from "lucide-react";
+import { Plus, Circle, CheckCircle2 } from "lucide-react";
 import {
   useTicketStore,
   type Ticket,
   type TicketStatus,
 } from "client/src/store/ticket-store";
-import { ticketApi } from "client/src/api/ticket";
-import { KanbanTicketCard } from "../TicketCard/KanbanTicketCard";
-import { AddTicketModal } from "../../AddTicketModal/AddTicketModal";
-import styles from "./KanbanBoard.module.scss";
 
+import styles from "./KanbanBoard.module.scss";
+import { ticketApi } from "client/src/api/ticket";
+import { InlineTicketForm } from "../../inline-ticket-form/InlineTicketForm";
+import { KanbanTicketCard } from "../TicketCard/KanbanTicketCard";
+
+// Simplified to match server API - only TODO and DONE
 const COLUMNS = [
   {
     id: "todo" as TicketStatus,
     title: "To Do",
     icon: Circle,
     className: "todo",
-  },
-  {
-    id: "inprogress" as TicketStatus,
-    title: "In Progress",
-    icon: Clock,
-    className: "inprogress",
   },
   {
     id: "done" as TicketStatus,
@@ -76,7 +71,7 @@ export function KanbanBoard() {
   const { getTicketsByStatus, users, moveTicket, addTicket, updateTicket } =
     useTicketStore();
   const [activeTicket, setActiveTicket] = useState<Ticket | null>(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [showInlineForm, setShowInlineForm] = useState(false);
 
   const sensors = useSensors(
     useSensor(PointerSensor, {
@@ -89,7 +84,6 @@ export function KanbanBoard() {
   const handleDragStart = (event: DragStartEvent) => {
     const { active } = event;
     const ticket = getTicketsByStatus("todo")
-      .concat(getTicketsByStatus("inprogress"))
       .concat(getTicketsByStatus("done"))
       .find((t) => t.id === active.id);
 
@@ -112,7 +106,6 @@ export function KanbanBoard() {
     }
 
     const currentTicket = getTicketsByStatus("todo")
-      .concat(getTicketsByStatus("inprogress"))
       .concat(getTicketsByStatus("done"))
       .find((t) => t.id === ticketId);
 
@@ -125,18 +118,16 @@ export function KanbanBoard() {
 
     // Update backend based on status transitions
     try {
-      const wasCompleted = currentTicket.status === "done";
+      const wasCompleted = currentTicket.completed;
       const willBeCompleted = newStatus === "done";
 
       if (!wasCompleted && willBeCompleted) {
         // Moving to done - mark as complete
         await ticketApi.completeTicket(ticketId);
       } else if (wasCompleted && !willBeCompleted) {
-        // Moving from done to any other status - mark as incomplete
+        // Moving from done to todo - mark as incomplete
         await ticketApi.incompleteTicket(ticketId);
       }
-      // For todo <-> inprogress transitions, no additional API call needed
-      // as the status is handled by the moveTicket action
 
       // Ensure the ticket state is consistent
       updateTicket(ticketId, {
@@ -146,18 +137,43 @@ export function KanbanBoard() {
     } catch (error) {
       console.error("Failed to update ticket status:", error);
       // Revert the optimistic update on error
-      moveTicket(ticketId, currentTicket.status);
-
-      // Show user-friendly error message
-      // You could add a toast notification here
+      moveTicket(
+        ticketId,
+        currentTicket.status || (currentTicket.completed ? "done" : "todo")
+      );
       alert(`Failed to update ticket status. Please try again.`);
     }
   };
 
-  const handleCreateTicket = async (description: string) => {
+  const handleCreateTicket = async (data: {
+    description: string;
+    status: TicketStatus;
+    assigneeId: number | null;
+  }) => {
     try {
-      const newTicket = await ticketApi.createTicket(description);
-      addTicket({ ...newTicket, status: "todo" });
+      // Create the ticket with the title as description (server requirement)
+      const newTicket = await ticketApi.createTicket(
+        data.description
+      );
+
+      // Handle assignment if specified
+      if (data.assigneeId) {
+        await ticketApi.assignTicket(newTicket.id, data.assigneeId);
+        newTicket.assigneeId = data.assigneeId;
+      }
+
+      // Handle completion status if creating as done
+      if (data.status === "done") {
+        await ticketApi.completeTicket(newTicket.id);
+        newTicket.completed = true;
+      }
+
+      // Add to store with proper status
+      addTicket({
+        ...newTicket,
+        status: data.status,
+        completed: data.status === "done",
+      });
     } catch (err) {
       throw new Error("Failed to create ticket");
     }
@@ -195,7 +211,16 @@ export function KanbanBoard() {
 
                 <DroppableColumn id={column.id}>
                   <div className={styles["ticketsList"]}>
-                    {tickets.length === 0 ? (
+                    {/* Inline form for TODO column */}
+                    {column.id === "todo" && showInlineForm && (
+                      <InlineTicketForm
+                        users={users}
+                        onSubmit={handleCreateTicket}
+                        onCancel={() => setShowInlineForm(false)}
+                      />
+                    )}
+
+                    {tickets.length === 0 && !showInlineForm ? (
                       <div className={styles["emptyColumn"]}>
                         <IconComponent className={styles["emptyIcon"]} />
                         <p>No tickets in {column.title.toLowerCase()}</p>
@@ -211,13 +236,13 @@ export function KanbanBoard() {
                     )}
                   </div>
 
-                  {column.id === "todo" && (
+                  {column.id === "todo" && !showInlineForm && (
                     <button
-                      onClick={() => setIsModalOpen(true)}
+                      onClick={() => setShowInlineForm(true)}
                       className={styles["addTicketButton"]}
                     >
                       <Plus className={styles["icon"]} />
-                      Add a ticket
+                      Create
                     </button>
                   )}
                 </DroppableColumn>
@@ -232,12 +257,6 @@ export function KanbanBoard() {
           ) : null}
         </DragOverlay>
       </DndContext>
-
-      <AddTicketModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        onSubmit={handleCreateTicket}
-      />
     </>
   );
 }
