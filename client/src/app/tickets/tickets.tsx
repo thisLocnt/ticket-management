@@ -1,38 +1,11 @@
-// import { Ticket } from '@acme/shared-models';
-// import styles from './tickets.module.css';
-
-// export interface TicketsProps {
-//   tickets: Ticket[];
-// }
-
-// export function Tickets(props: TicketsProps) {
-//   return (
-//     <div className={styles['tickets']}>
-//       <h2>Tickets</h2>
-//       {props.tickets ? (
-//         <ul>
-//           {props.tickets.map((t) => (
-//             <li key={t.id}>
-//               Ticket: {t.id}, {t.description}
-//             </li>
-//           ))}
-//         </ul>
-//       ) : (
-//         <span>...</span>
-//       )}
-//     </div>
-//   );
-// }
-
-// export default Tickets;
-
 "use client";
 
 import { useEffect, useState } from "react";
-import { Plus, Filter, Search } from "lucide-react";
+import { Plus, Filter, Search, LayoutGrid, List } from "lucide-react";
 import { useTicketStore } from "../../store/ticket-store";
 import { ticketApi } from "../../api/ticket";
 import { TicketCard } from "../../components/TicketCard";
+import { KanbanBoard } from "client/src/components/Kanban/Board/KanbanBoard";
 import { AddTicketModal } from "../../components/AddTicketModal";
 import { LoadingSpinner } from "../../components/LoadingSpinner";
 import styles from "./tickets.module.scss";
@@ -44,11 +17,13 @@ export function Tickets() {
     loading,
     error,
     filter,
+    viewMode,
     setTickets,
     setUsers,
     setLoading,
     setError,
     setFilter,
+    setViewMode,
     addTicket,
     filteredTickets,
   } = useTicketStore();
@@ -82,7 +57,7 @@ export function Tickets() {
   const handleCreateTicket = async (description: string) => {
     try {
       const newTicket = await ticketApi.createTicket(description);
-      addTicket(newTicket);
+      addTicket({ ...newTicket, status: "todo" });
     } catch (err) {
       throw new Error("Failed to create ticket");
     }
@@ -124,89 +99,113 @@ export function Tickets() {
 
   return (
     <div className={styles["ticketsContainer"]}>
-      <div className="space-y-6">
-        {/* Header */}
-        <div className={styles["header"]}>
-          <div className={styles["headerContent"]}>
-            <h1>Tickets</h1>
-            <p>Manage and track your team's work</p>
-          </div>
-          <button
-            onClick={() => setIsModalOpen(true)}
-            className={styles["createButton"]}
-          >
-            <Plus className={styles["icon"]} />
-            Create Ticket
-          </button>
-        </div>
-
-        {/* Filters and Search */}
-        <div className={styles["filtersSection"]}>
-          <div className={styles["filterGroup"]}>
-            <Filter className={styles["icon"]} />
-            <div className={styles["filterTabs"]}>
-              {(["all", "pending", "completed"] as const).map(
-                (filterOption) => (
-                  <button
-                    key={filterOption}
-                    onClick={() => setFilter(filterOption)}
-                    className={`${styles["filterTab"]} ${
-                      filter === filterOption ? styles["active"] : ""
-                    }`}
-                  >
-                    {filterOption === "all"
-                      ? "All"
-                      : filterOption === "pending"
-                      ? "To Do"
-                      : "Done"}
-                    <span className={styles["filterCount"]}>
-                      {getFilterCount(filterOption)}
-                    </span>
-                  </button>
-                )
-              )}
-            </div>
-          </div>
-
-          <div className={styles["searchContainer"]}>
-            <Search className={styles["searchIcon"]} />
-            <input
-              type="text"
-              placeholder="Search tickets..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className={styles["searchInput"]}
-            />
-          </div>
-        </div>
-
-        {/* Tickets Grid */}
-        {displayedTickets.length === 0 ? (
-          <div className={styles["emptyState"]}>
-            <div className={styles["emptyIcon"]}>
-              <Filter />
-            </div>
-            <h3>No tickets found</h3>
-            <p>
-              {searchTerm
-                ? "Try adjusting your search terms"
-                : "Get started by creating your first ticket"}
-            </p>
-            {!searchTerm && (
+      <div className="space-y-lg">
+        {/* Controls */}
+        <div className={styles["controls"]}>
+          <div className={styles["leftControls"]}>
+            <div className={styles["viewToggle"]}>
               <button
-                onClick={() => setIsModalOpen(true)}
-                className={styles["createButton"]}
+                onClick={() => setViewMode("kanban")}
+                className={viewMode === "kanban" ? styles["active"] : ""}
               >
-                Create First Ticket
+                <LayoutGrid size={16} />
+                Board
               </button>
+              <button
+                onClick={() => setViewMode("list")}
+                className={viewMode === "list" ? styles["active"] : ""}
+              >
+                <List size={16} />
+                List
+              </button>
+            </div>
+
+            {viewMode === "list" && (
+              <div className={styles["filterGroup"]}>
+                <Filter size={16} />
+                <div className={styles["filterTabs"]}>
+                  {(["all", "pending", "completed"] as const).map(
+                    (filterOption) => (
+                      <button
+                        key={filterOption}
+                        onClick={() => setFilter(filterOption)}
+                        className={`${styles["filterTab"]} ${
+                          filter === filterOption ? styles["active"] : ""
+                        }`}
+                      >
+                        {filterOption === "all"
+                          ? "All"
+                          : filterOption === "pending"
+                          ? "To Do"
+                          : "Done"}
+                        <span className={styles["filterCount"]}>
+                          {getFilterCount(filterOption)}
+                        </span>
+                      </button>
+                    )
+                  )}
+                </div>
+              </div>
             )}
           </div>
-        ) : (
-          <div className={styles["ticketsGrid"]}>
-            {displayedTickets.map((ticket) => (
-              <TicketCard key={ticket.id} ticket={ticket} users={users} />
-            ))}
+
+          <div className={styles["rightControls"]}>
+            {viewMode === "list" && (
+              <div className={styles["searchContainer"]}>
+                <Search className={styles["searchIcon"]} />
+                <input
+                  type="text"
+                  placeholder="Search tickets..."
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  className={styles["searchInput"]}
+                />
+              </div>
+            )}
+
+            <button
+              onClick={() => setIsModalOpen(true)}
+              className={`btn primary ${styles["createButton"]}`}
+            >
+              <Plus size={16} />
+              Create Ticket
+            </button>
           </div>
+        </div>
+
+        {/* Content */}
+        {viewMode === "kanban" ? (
+          <KanbanBoard />
+        ) : (
+          <>
+            {displayedTickets.length === 0 ? (
+              <div className={styles["emptyState"]}>
+                <div className={styles["emptyIcon"]}>
+                  <Filter size={48} />
+                </div>
+                <h3>No tickets found</h3>
+                <p>
+                  {searchTerm
+                    ? "Try adjusting your search terms"
+                    : "Get started by creating your first ticket"}
+                </p>
+                {!searchTerm && (
+                  <button
+                    onClick={() => setIsModalOpen(true)}
+                    className="btn primary"
+                  >
+                    Create First Ticket
+                  </button>
+                )}
+              </div>
+            ) : (
+              <div className={styles["ticketsGrid"]}>
+                {displayedTickets.map((ticket) => (
+                  <TicketCard key={ticket.id} ticket={ticket} users={users} />
+                ))}
+              </div>
+            )}
+          </>
         )}
 
         <AddTicketModal
