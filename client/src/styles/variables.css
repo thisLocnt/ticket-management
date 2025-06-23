@@ -1,0 +1,92 @@
+/* // Jira-inspired Color System */
+:root {
+  --color-primary: #0052cc;
+  --color-primary-hover: #0747a6;
+  --color-primary-light: #deebff;
+  --color-primary-dark: #003884;
+
+  --color-secondary: #42526e;
+  --color-secondary-hover: #344563;
+  --color-secondary-light: #f4f5f7;
+  --color-secondary-dark: #253858;
+
+  --color-success: #36b37e;
+  --color-success-hover: #2d9f6b;
+  --color-success-light: #e3fcef;
+  --color-success-dark: #1f7a54;
+
+  --color-warning: #ffab00;
+  --color-warning-hover: #ff9500;
+  --color-warning-light: #fffae6;
+  --color-warning-dark: #b8860b;
+
+  --color-danger: #de350b;
+  --color-danger-hover: #bf2600;
+  --color-danger-light: #ffebe6;
+  --color-danger-dark: #9a2600;
+
+  --color-info: #0065ff;
+  --color-info-hover: #0052cc;
+  --color-info-light: #deebff;
+  --color-info-dark: #003884;
+
+  --color-neutral-50: #fafbfc;
+  --color-neutral-100: #f4f5f7;
+  --color-neutral-200: #ebecf0;
+  --color-neutral-300: #dfe1e6;
+  --color-neutral-400: #b3bac5;
+  --color-neutral-500: #8993a4;
+  --color-neutral-600: #6b778c;
+  --color-neutral-700: #42526e;
+  --color-neutral-800: #253858;
+  --color-neutral-900: #172b4d;
+
+  --color-background: #fafbfc;
+  --color-surface: #ffffff;
+  --color-surface-raised: #ffffff;
+  --color-surface-overlay: #ffffff;
+
+  --color-border: #dfe1e6;
+  --color-border-light: #ebecf0;
+  --color-border-dark: #b3bac5;
+
+  --color-text-primary: #172b4d;
+  --color-text-secondary: #42526e;
+  --color-text-tertiary: #6b778c;
+  --color-text-disabled: #b3bac5;
+  --color-text-inverse: #ffffff;
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 200ms ease-in-out;
+  --transition-slow: 300ms ease-in-out;
+}
